@@ -115,8 +115,8 @@
     <table class="table table-bordered">
       <tr>
         <td>
-          <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png" id="toggleImage" onclick="toggleImage();" /><br>
-          <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png" id="toggleImage2" onclick="toggleImage2();" />
+          <img src="button-off-xxl.png" id="toggleImage" onclick="toggleImage();" /><br>
+          <img src="button-off-xxl.png" id="toggleImage2" onclick="toggleImage2();" />
         </td>
         <td>
           <img id="andGate" src="and2off.PNG" alt="AND Gate">
@@ -132,7 +132,7 @@
       const inputOne = document.getElementById("toggleImage").src.includes("button-on");
       const inputTwo = document.getElementById("toggleImage2").src.includes("button-on");
 
-     if (inputOne && inputTwo) {
+      if (inputOne && inputTwo) {
         document.getElementById("andGate").src = "and2on.png";
       } else if (inputOne) {
         document.getElementById("andGate").src = "andonoff.PNG";
@@ -147,9 +147,9 @@
     function toggleImage() {
       const img = document.getElementById("toggleImage");
       if (img.src.includes("button-off")) {
-        img.src = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
+        img.src = "button-on-xxl.png";
       } else {
-        img.src = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
+        img.src = "button-off-xxl.png";
       }
       and();  // Update AND gate logic whenever an input is toggled
     }
@@ -158,9 +158,9 @@
     function toggleImage2() {
       const img = document.getElementById("toggleImage2");
       if (img.src.includes("button-off")) {
-        img.src = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
+        img.src = "button-on-xxl.png";
       } else {
-        img.src = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
+        img.src = "button-off-xxl.png";
       }
       and();  // Update AND gate logic whenever an input is toggled
     }
