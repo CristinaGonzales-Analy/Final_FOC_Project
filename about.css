@@ -190,3 +190,20 @@ header {
         padding: 12px 25px;
     }
 }
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the size as needed */
+    gap: 16px; /* Space between images */
+    padding: 16px; /* Padding around the grid */
+}
+
+.image-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.image-grid img:hover {
+    outline: 4px solid lightblue; /* Light blue outline on hover */
+}
