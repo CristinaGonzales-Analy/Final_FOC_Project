@@ -204,6 +204,6 @@ header {
     border-radius: 8px; /* Optional: rounded corners */
 }
 
-.image-grid img: hover {
+.image-grid img:hover {
     outline: 4px solid lightblue; /* Light blue outline on hover */
 }
